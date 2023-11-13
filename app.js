@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 // https: //github.com/expressjs/method-override#custom-logic
 app.use(methodOverride(function (req, res) {
     if (req.body && typeof req.body === 'object' && '_method' in req.body) {
-        // look in urlencoded POST bodies and delete it
+        // look in urlencoded POST bodies and delete it ok
         let method = req.body._method;
         delete req.body._method;
         return method
