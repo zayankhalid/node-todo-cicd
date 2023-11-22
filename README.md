@@ -3,7 +3,7 @@
 sudo apt install nodejs
 sudo apt install npm
 
-#installing npm
+#installing npm and this is also working fine
 sudo npm install
 
 node app.js
